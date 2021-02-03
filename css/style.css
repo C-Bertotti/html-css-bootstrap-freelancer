@@ -17,8 +17,9 @@ body {
 /* /mix */
 
 /* typo */
-h1 {
+h1, h2 {
     text-transform: uppercase;
+    text-align: center;
 }
 /* /typo */
 
@@ -47,7 +48,6 @@ li {
 
 section {
     padding: 85px 0;
-    text-align: center;
 }
 .jumbo__placeholder {
     background-color: #fff;
@@ -69,6 +69,12 @@ section {
     background-color: lightgrey;
     margin: 25px auto;
 }
+
+.contact__form {
+    width: 100%;
+    height: 400px;
+    background-color: lightgrey;
+}
 /* /main */
 
 
@@ -81,6 +87,19 @@ section {
         display: none;
     }
     /* /header */
+
+    /* main */
+    .wrapper__row {
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* /main */
+
+}
+
+/* intermedio xsmall-small */
+@media screen and (min-width:552px) {
+    
 }
 
 /* small */
@@ -95,6 +114,11 @@ section {
     .portfolio__item {
         height: 250px;
     }
+
+    .wrapper__row {
+        max-width: 550px;
+        margin: 0 auto;
+    }
     /* /main */
 
 }
@@ -106,10 +130,6 @@ section {
         padding-top: 100px;
     }
     /* /mix */
-
-    /* typo */
-   
-    /* /typo */
 
     /* header */
     header {
@@ -130,6 +150,10 @@ section {
     .portfolio__item {
         height: 230px;
     }
+
+    .wrapper__row {
+        max-width: 700px;
+    }
     /* /main  */
 
 }
@@ -139,6 +163,10 @@ section {
     /* main */
     .portfolio__item {
         height: 250px;
+    }
+
+    .wrapper__row {
+        max-width: 800px;
     }
     /* /main  */
 
