@@ -3,6 +3,10 @@
 }
 
 /* mix */
+body {
+    padding-top: 80px;
+}
+
 .bg--blue {
     background-color: #2c3e50;
 }
@@ -20,6 +24,7 @@ h1 {
 header {
     height: 80px;
     color: #fff;
+    border: none;
 }
 
 li {
@@ -31,6 +36,11 @@ li {
 }
 /* /header */
 
+/* main */
+.prova {
+    height: 1000px;
+}
+/* /main */
 
 
 /* responsive */
@@ -54,8 +64,14 @@ li {
 
 }
 
-/* large */
+/* medium */
 @media screen and (min-width:992px) {
+    /* mix */
+    body {
+        padding-top: 100px;
+    }
+    /* /mix */
+
     /* typo */
     h1 {
         font-size: 36px;
@@ -72,6 +88,8 @@ li {
         padding-top: 30px;
     }
     /* /header */
+
+ 
 
 
 }
