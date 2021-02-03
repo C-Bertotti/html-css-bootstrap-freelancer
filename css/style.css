@@ -24,13 +24,36 @@ header {
 
 li {
     list-style: none;
-    display: inline-block;
+}
+
+.nav__main {
+    padding-top: 25px;
 }
 /* /header */
 
 
 
 /* responsive */
+
+/* solo xsmall */
+@media screen and (max-width:767px) {
+    /* header */
+    .nav__main li:not(:first-child) {
+        display: none;
+    }
+    /* /header */
+}
+
+/* small */
+@media screen and (min-width:768px) {
+    /* header */
+    .nav__main li {
+        display: inline-block;
+    }
+    /* /header */
+
+}
+
 /* large */
 @media screen and (min-width:992px) {
     /* typo */
@@ -52,3 +75,4 @@ li {
 
 
 }
+
