@@ -72,9 +72,13 @@ body {
     background-color: #1abc9c;
 }
 
-.btn__primary:hover {
+.btn__primary.btn--bordered:hover {
     background-color: #fff;
     color: #000;
+}
+.btn__primary:hover {
+    background-color: #159a80;
+    color: #fff;
 }
 
 .btn--bordered {
@@ -215,10 +219,21 @@ section, .footer__top {
 /* /about */
 
 /* contact */
-.contact__form {
+.form__input {
     width: 100%;
-    height: 400px;
-    background-color: lightgrey;
+    height: 100px;
+    border: none;
+    border-bottom: 1px solid #e9ecef;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 24px;
+    color: #495057;
+}
+.form__textarea {
+    resize: none;
+    display: block;
+    margin-top: 25px;
+    height: 150px;
 }
 /* /contact */
 /* /main */
@@ -238,16 +253,6 @@ section, .footer__top {
     .portfolio__box {
         max-width: 400px;
         margin: 50px auto 0;
-    }
-    /* /main */
-}
-
-/* small */
-@media screen and (min-width:768px) {
-   /* main */
-    .wrapper__row {
-        max-width: 550px;
-        margin: 0 auto;
     }
     /* /main */
 }
