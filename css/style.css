@@ -54,6 +54,10 @@ body {
 .mg__top--30 {
     margin-top: 30px;
 }
+
+.mg__bottom--50 {
+    margin-bottom: 50px;
+}
 /* /helper */
 
 /* buttons */
@@ -103,9 +107,12 @@ h1, h2, h3 {
 h1 {
     font-size: 44px;
 }
-
 h1 {
     font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
 a {
@@ -241,6 +248,29 @@ section, .footer__top {
 /* footer */
 .footer__bottom {
     padding: 20px 0;
+}
+
+.social_list a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    line-height: 48px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+.social_list a:hover {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+.link__primary {
+    color: #1abc9c;
+}
+.link__primary:hover {
+    color: #117964;
+    text-decoration: underline;
 }
 /* /footer */
 
