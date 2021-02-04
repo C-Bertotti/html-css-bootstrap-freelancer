@@ -4,6 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Freelancer</title>
+        <!-- googlefont -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@700&display=swap" rel="stylesheet">   
+        <!-- /googlefont -->
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <!-- /fontawesome -->
         <!-- bootsrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- /bootsrap -->
@@ -12,27 +19,28 @@
         <!-- /style -->
     </head>
 
-    <body>
+    <body class="debug">
         <header class="bg--blue text-uppercase navbar navbar-fixed-top">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-8 col-sm-6">
-                        <a href="" class="header__logo">lorem</a>
+                        <a href="" class="header__logo">start bootstrap</a>
                     </div>
                     <div class="col-xs-4 col-sm-6 text-right">
-                        <nav class="nav__main">
-                            <ul>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
+                        <nav class="nav__main hidden-xs hidden-sm">
+                            <ul class="list-inline">
+                                <li><a href="#portfolio">portfolio</a></li>
+                                <li><a href="#about">about</a></li>
+                                <li><a href="#contact">contact</a></li>
                             </ul>
                         </nav>
+                        <button type="button" class="btn btn--primary text-uppercase hidden-md hidden-lg">menu<i class="fas fa-bars"></i></button>
                     </div>
                 </div>
             </div>            
         </header>
         <main>
-            <section id="jumbo" class="bg--green text-center">
+            <section id="jumbo" class="bg--primary text-center">
                 <div class="jumbo__img">
                 </div>
                 <h1>start bootstrap</h1>
@@ -71,7 +79,7 @@
                     </div>
                 </div>
             </section>
-            <section id="about" class="bg--green">
+            <section id="about" class="bg--primary">
                 <div class="container">
                     <div class="row">
                         <div class="col-cs-12">

@@ -1,0 +1,9 @@
+.btn--primary {
+    background-color: #1abc9c;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn--primary .fas {
+    padding-left: 10px;
+}
