@@ -24,3 +24,30 @@
 .divider--light::after {
     background-color: #fff;
 }
+
+
+
+/* buttons */
+.btn-std {
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.btn__primary {
+    background-color: #1abc9c;
+}
+
+.btn--bordered {
+    border: 1px solid #fff;
+}
+
+.btn--lg {
+    padding: 20px;
+}
+
+
+header .btn--primary i {
+    padding-left: 5px;
+}
+/* /buttons */

@@ -48,21 +48,42 @@ body {
 .divider__icon {
     padding: 0 10px;
 }
-
-
 /* /mix */
 
+/* helper */
+.mg__top--30 {
+    margin-top: 30px;
+}
+/* /helper */
+
 /* buttons */
-.btn--primary {
-    background-color: #1abc9c;
+.btn--std {
+    padding: 10px;
     color: #fff;
     font-size: 14px;
-    padding: 10px;
+    border-radius: 5px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
 }
 
-header .btn--primary i {
-    padding-left: 5px;
+.btn__primary {
+    background-color: #1abc9c;
 }
+
+.btn__primary:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn--bordered {
+    border: 2px solid #fff;
+}
+
+.btn--lg {
+    padding: 20px;
+}
+
 /* /buttons */
 
 
@@ -76,6 +97,10 @@ h1, h2, h3 {
 
 h1 {
     font-size: 44px;
+}
+
+h1 {
+    font-size: 36px;
 }
 
 a {
@@ -121,7 +146,6 @@ header {
     color: #fff;
     text-decoration: none;
 }
-
 /* /header */
 
 /* main */
@@ -167,15 +191,21 @@ section, .footer__top {
 .portfolio__box:hover p {
     display: block;
 }
-
 /* /portfolio */
 
+/* about */
+#about button i {
+    padding-right: 10px;
+}
+/* /about */
 
+/* contact */
 .contact__form {
     width: 100%;
     height: 400px;
     background-color: lightgrey;
 }
+/* /contact */
 /* /main */
 
 /* footer */
@@ -187,44 +217,24 @@ section, .footer__top {
 
 
 /* responsive */
-
 /* solo xsmall */
 @media screen and (max-width:767px) {
-    /* header */
-    
-    /* /header */
-
-    /* main */
+     /* main */
     .portfolio__box {
         max-width: 400px;
         margin: 50px auto 0;
     }
-
-    .wrapper__row {
-        width: 100%;
-        margin: 0 auto;
-    }
     /* /main */
-
-}
-
-/* intermedio xsmall-small */
-@media screen and (min-width:552px) {
-    
 }
 
 /* small */
 @media screen and (min-width:768px) {
-    /* header */
-    /* /header */
-
-    /* main */
+   /* main */
     .wrapper__row {
         max-width: 550px;
         margin: 0 auto;
     }
     /* /main */
-
 }
 
 /* medium */
@@ -233,11 +243,20 @@ section, .footer__top {
     body {
         padding-top: 100px;
     }
+
+    .container--small {
+        max-width: 700px;
+        margin: 0 auto;
+    }
     /* /mix */
 
     /* typo */
     h1 {
         font-size: 64px;
+    }
+
+    h2 {
+        font-size: 48px;
     }
     /* /typo */
 
@@ -254,7 +273,6 @@ section, .footer__top {
 
     .nav__main {
         padding-top: 23px;
-
     }
 
     /* /header */
@@ -263,13 +281,6 @@ section, .footer__top {
     #jumbo p {
         font-size: 24px;
     }
-    .portfolio__item {
-        height: 230px;
-    }
-
-    .wrapper__row {
-        max-width: 700px;
-    }
     /* /main  */
 
 }
@@ -277,11 +288,7 @@ section, .footer__top {
 /* large */
 @media screen and (min-width:1200px) {
     /* main */
-    .portfolio__item {
-        height: 250px;
-    }
-
-    .wrapper__row {
+    .container--small {
         max-width: 800px;
     }
     /* /main  */
