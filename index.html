@@ -6,7 +6,7 @@
         <title>Freelancer</title>
         <!-- googlefont -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@700&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@700&display=swap" rel="stylesheet">   
         <!-- /googlefont -->
         <!-- fontawesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -20,12 +20,15 @@
     </head>
 
     <body class="debug">
-        <header class="bg--blue text-uppercase navbar navbar-fixed-top">
+        <header class="bg__secondary--300 text-uppercase navbar navbar-fixed-top">
             <div class="container">
                 <div class="row">
+                    <!-- header__col__sx -->
                     <div class="col-xs-8 col-sm-6">
                         <a href="" class="header__logo">start bootstrap</a>
                     </div>
+                    <!-- /header__col__sx -->
+                    <!-- header__col__dx -->
                     <div class="col-xs-4 col-sm-6 text-right">
                         <nav class="nav__main hidden-xs hidden-sm">
                             <ul class="list-inline">
@@ -36,15 +39,23 @@
                         </nav>
                         <button type="button" class="btn btn--primary text-uppercase hidden-md hidden-lg">menu<i class="fas fa-bars"></i></button>
                     </div>
+                    <!-- /header__col__dx -->
                 </div>
             </div>            
         </header>
         <main>
-            <section id="jumbo" class="bg--primary text-center">
-                <div class="jumbo__img">
-                </div>
+            <section id="jumbo" class="bg__primary text-center">
+                <img class="jumbo__img" src="img/avatar.svg" alt="profile">
                 <h1>start bootstrap</h1>
-                <p>lorem lorem lorem</p>
+                <div class="divider divider--light">
+                    <div class="divider__line divider__line--light"></div>
+                    <div class="divider__icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider__line  divider__line--light"></div>
+                </div>
+
+                <p>Graphic Artist - Web Designer - Illustrator</p>
             </section>
             <section id="portfolio">
                 <div class="container">
@@ -79,7 +90,7 @@
                     </div>
                 </div>
             </section>
-            <section id="about" class="bg--primary">
+            <section id="about" class="bg__primary">
                 <div class="container">
                     <div class="row">
                         <div class="col-cs-12">
@@ -112,7 +123,7 @@
             </section>
         </main>
         <footer class="text-center">
-            <div class="footer__top bg--blue">
+            <div class="footer__top bg__secondary--300">
                 <div class="container">
                     <div class="row ">
                         <div class="col-xs-12 col-md-4">
@@ -130,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer__bottom bg--darkblue">
+            <div class="footer__bottom bg__secondary--400">
                 <p>Copyright © Your Website 2020</p>
             </div>
         </footer>

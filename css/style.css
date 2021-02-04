@@ -9,18 +9,45 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.bg--blue {
+.bg__secondary--300 {
     background-color: #2c3e50;
 }
-.bg--primary {
+.bg__primary {
     background-color: #1abc9c;
 }
-.bg--darkblue {
+.bg__secondary--400 {
     background-color: #1a252f;
 }
-.bg--blue, .bg--green, .bg--darkblue {
+.bg__secondary--300, .bg__primary, .bg__secondary--400 {
     color: #fff;
 }
+
+.divider {
+    font-size: 32px;
+    margin: 20px 30px;
+    color: #2c3e50;
+}
+.divider--light {
+    color: #fff;
+}
+.divider--light .divider__line {
+    background-color: #fff;
+}
+.divider * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.divider__line {
+    height: 4px;
+    width: 120px;
+    border-radius: 2px;
+    background-color: #2c3e50
+}
+.divider__icon {
+    padding: 0 10px;
+}
+
+
 /* /mix */
 
 /* buttons */
@@ -41,10 +68,22 @@ header .btn--primary i {
 h1, h2, h3 {
     text-transform: uppercase;
     text-align: center;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
+h1 {
+    font-size: 44px;
 }
 
 a {
     color: #fff;
+}
+
+p {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
 }
 /* /typo */
 
@@ -93,11 +132,7 @@ section, .footer__top {
     margin: 0 auto;
 }
 .jumbo__img {
-    height: 250px;
     width: 250px;
-    border-radius: 100%;
-    margin: 0 auto;
-    background-color: #2c3e50;
 }
 
 .portfolio__item {
@@ -171,6 +206,12 @@ section, .footer__top {
     }
     /* /mix */
 
+    /* typo */
+    h1 {
+        font-size: 64px;
+    }
+    /* /typo */
+
     /* header */
     header {
         height: 100px;
@@ -190,6 +231,9 @@ section, .footer__top {
     /* /header */
    
     /* main */
+    #jumbo p {
+        font-size: 24px;
+    }
     .portfolio__item {
         height: 230px;
     }
